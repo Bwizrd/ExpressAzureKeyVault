@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "export AZURE_TENANT_ID=d9827387-7284-4ccc-b1a6-657f7d2ab26a&& export AZURE_APP_ID=3b891b1d-78a8-4ac0-881c-f3b0f203f232&& export AZURE_SECRET_ID=oO98Q~B3dDEWxkIABRfkFvzfp-.N3e-LFvUOubwL&& node .",
+        "start": "node .",
+        "start:prod": "node .",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
