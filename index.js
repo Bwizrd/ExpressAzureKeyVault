@@ -3,7 +3,7 @@ const { SecretClient } = require("@azure/keyvault-secrets");
 
 const credential = new ClientSecretCredential(process.env.AZURE_TENANT_ID, process.env.AZURE_APP_ID, process.env.AZURE_SECRET_ID);
 
-const vaultName = "kv-pl-devtest";
+const vaultName = process.env.AZURE_VAULTNAME //"kv-pl-devtest";
 const url = `https://${vaultName}.vault.azure.net`;
 
 const client = new SecretClient(url, credential);
